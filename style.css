@@ -2,23 +2,28 @@
     margin: 0;
     padding: 0;
 }
+
 :root {
     --navbar-height: 59px;
 }
-#navbar{
+
+#navbar {
     display: flex;
     align-items: center;
     position: relative;
-    
+    font-family: 'Agdasima', sans-serif;
+
+
 }
-#navbar::before{
+
+#navbar::before {
     content: "";
     background-color: black;
     position: absolute;
     height: 100%;
     width: 100%;
     z-index: -1;
-    opacity: .4;
+    opacity: 1;
 
 }
 
@@ -27,20 +32,25 @@
     height: 60px;
     width: 70px;
 }
+
 #logo img {
     height: 100%;
     width: 100%;
     border-radius: 20px;
 }
+
 ul {
     display: flex;
 }
+
 #navbar ul li {
     list-style: none;
     font-size: 1.3rem;
-    
+
+
 }
-#navbar ul li a{
+
+#navbar ul li a {
     display: block;
     padding: 3px 22px;
     text-decoration: none;
@@ -48,8 +58,57 @@ ul {
     border-radius: 20px;
 
 }
+
 #navbar ul li a:hover {
     color: black;
     background-color: white;
+    transform: scale(1.05);
+    transition: all .5s;
 }
 
+/* Home Section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#home::before {
+    content: "";
+    background: url(images/home.jpeg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .89;
+
+}
+#home h1{
+    color: rgb(51, 26, 118);
+    font-family: 'Outfit', sans-serif;
+}
+
+.h-primary {
+    font-size: 2.8rem;
+    padding: 12px;
+}
+p{
+    font-family: 'Agdasima', sans-serif;
+    font-size: 1.3rem;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
