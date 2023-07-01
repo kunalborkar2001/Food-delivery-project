@@ -12,8 +12,7 @@
     align-items: center;
     position: relative;
     font-family: 'Agdasima', sans-serif;
-
-
+    top: 0;
 }
 
 #navbar::before {
@@ -24,6 +23,8 @@
     width: 100%;
     z-index: -1;
     opacity: 1;
+    top: 0;
+    left: 0;
 
 }
 
@@ -72,7 +73,7 @@ ul {
     display: flex;
     flex-direction: column;
     padding: 3px 200px;
-    height: 400px;
+    height: 550px;
     justify-content: center;
     align-items: center;
 
@@ -82,10 +83,12 @@ ul {
     content: "";
     background: url(images/home.jpeg) no-repeat center center/cover;
     position: absolute;
-    height: 100%;
+    height: 642px;
     width: 100%;
     z-index: -1;
     opacity: .89;
+    top: 0;
+    left: 0;
 
 }
 #home h1{
@@ -93,10 +96,55 @@ ul {
     font-family: 'Outfit', sans-serif;
 }
 
+/* Services Section */
+.services-container{
+    /* margin-top: 700px; */
+
+}
+
+#services{
+    margin: 54px;
+    display: flex;
+}
+#services .box {
+    border: brown 2px solid;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: #f1ebe3;
+
+}
+
+#services .box img{
+    height: 160px;
+    width: 258x;
+    display: block;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+/* Utility Class */
+
 .h-primary {
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Outfit', sans-serif;
+
+}
+
+.h-secondary {
     font-size: 2.8rem;
     padding: 12px;
+    font-family: 'Outfit', sans-serif;
+
 }
+
 p{
     font-family: 'Agdasima', sans-serif;
     font-size: 1.3rem;
@@ -104,11 +152,22 @@ p{
 
 .btn{
     padding: 6px 20px;
-    border: 2px solid white;
+    border: 2px solid rgb(14, 14, 3);
     background-color: brown;
     color: white;
     margin: 17px;
     border-radius: 20px;
     font-size: 1.5rem;
     cursor: pointer;
+
 }
+.btn:hover{
+    color: black;
+    transform: scale(1.1);
+    transition: all .3s;
+}
+
+.center{
+    text-align: center;
+}
+
